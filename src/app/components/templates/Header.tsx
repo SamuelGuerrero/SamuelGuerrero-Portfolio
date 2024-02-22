@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Title } from "../atoms";
+import { Subtitle, Title } from "../atoms";
 
 export const Header = () => {
   return (
@@ -17,9 +17,7 @@ export const Header = () => {
           <Title>{"Hi, I'm"}</Title>
           <Title className="text-black mb-20">Samuel Guerrero</Title>
 
-          <Title className="text-5xl bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-500">
-            Computer Engineering
-          </Title>
+          <Subtitle className="">Computer Engineering</Subtitle>
         </div>
         <div>
           <Image

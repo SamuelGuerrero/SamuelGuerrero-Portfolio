@@ -5,7 +5,7 @@ import {
   ReactNode,
   useState,
 } from "react";
-import { Subtitle } from "../atoms";
+import { Paragraph } from "../atoms/Text";
 
 interface INavigationLink
   extends DetailedHTMLProps<
@@ -30,7 +30,7 @@ export const NavigationLink = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <Subtitle
+        <Paragraph
           className={`bg-clip-text ${
             isHovered
               ? "from-green-400 to-blue-500 text-transparent bg-gradient-to-r dark:from-pink-500 dark:to-yellow-500"
@@ -38,7 +38,7 @@ export const NavigationLink = ({
           }`}
         >
           {children}
-        </Subtitle>
+        </Paragraph>
         <div
           className={`h-[2px] ${
             isHovered ? "w-full" : "w-0"
