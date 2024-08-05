@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Subtitle, Title } from "../atoms";
+import { TextEffect } from "../molecules";
 
 export const Header = () => {
   return (
@@ -16,6 +17,7 @@ export const Header = () => {
         <div className="w-full">
           <Title>{"Hi, I'm"}</Title>
           <Title className="text-black mb-20">Samuel Guerrero</Title>
+          <TextEffect />
 
           <Subtitle className="">Computer Engineering</Subtitle>
         </div>
