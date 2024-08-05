@@ -1,4 +1,4 @@
-import { NavBar } from "./components/molecules";
+import { NavBar } from "./components/organisms";
 import { Header } from "./components/templates";
 
 export default function Home() {

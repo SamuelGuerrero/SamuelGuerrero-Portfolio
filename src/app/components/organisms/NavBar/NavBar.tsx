@@ -1,5 +1,5 @@
-import { NavigationLink } from ".";
-import { ThemeToggle } from "../atoms";
+import { NavigationLink } from "../../molecules";
+import { ThemeToggle } from "../../atoms";
 
 export const NavBar = () => {
   return (
