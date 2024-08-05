@@ -1,4 +1,10 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
+
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 
 const config: Config = {
   darkMode: 'class',
@@ -13,9 +19,20 @@ const config: Config = {
         black: '#0D1B2A',
         white: '#FFFAFF',
         'french-gray': '#CED3DC'
-      }
+      },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
 export default config;
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+ 
+  addBase({
+    ":root": newVars,
+  });
+}
