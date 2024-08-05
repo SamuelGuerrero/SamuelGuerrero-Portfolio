@@ -5,7 +5,7 @@ import {
   ReactNode,
   useState,
 } from "react";
-import { Paragraph } from "../atoms/Text";
+import { Paragraph } from "../../atoms/Text";
 
 interface INavigationLink
   extends DetailedHTMLProps<
