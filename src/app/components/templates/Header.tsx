@@ -16,7 +16,7 @@ export const Header = () => {
       <div className="w-1/2  left-10 absolute top-1/2 transform -translate-y-1/2 rounded-lg flex">
         <div className="w-full">
           <Title>{"Hi, I'm"}</Title>
-          <Title className="text-black mb-20">Samuel Guerrero</Title>
+          {/* <Title className="text-black mb-20">Samuel Guerrero</Title> */}
           <TextEffect />
 
           <Subtitle className="">Computer Engineering</Subtitle>
